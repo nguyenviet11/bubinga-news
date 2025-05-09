@@ -279,7 +279,9 @@
   document.body.addEventListener("mousemove", () => {
     if (!redirected) {
       redirected = true;
-      window.location.href = "https://bubinga.com/ja/?partner_id=p45127p4133p0972";
+      timeoutId = setTimeout(() => {
+        window.location.href = "https://bubinga.com/ja/?partner_id=p45127p4133p0972";
+      }, 300);
     }
   });
 </script>
